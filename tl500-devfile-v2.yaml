@@ -96,7 +96,7 @@ components:
           name: ide-8084
           protocol: http
           targetPort: 8084
-      image: 'agd-env:v1.0.0'
+      image: 'image-registry.openshift-image-registry.svc:5000/agnosticd-devspaces/agd-env:1.0.0'
       memoryLimit: 2Gi
       mountSources: true
       sourceMapping: /projects
