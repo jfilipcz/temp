@@ -96,7 +96,7 @@ components:
           name: ide-8084
           protocol: http
           targetPort: 8084
-      image: 'quay.io/jfilipcz0/agd-env:v1.0.0'
+      image: 'agd-env:v1.0.0'
       memoryLimit: 2Gi
       mountSources: true
       sourceMapping: /projects
@@ -107,7 +107,7 @@ components:
           path: /home/developer/.config
         - name: npm
           path: /home/developer/.npm
-    name: stack-tl500
+    name: stack-agnosticd
   - name: projects
     volume: {}
   - name: config
