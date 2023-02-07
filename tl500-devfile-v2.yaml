@@ -96,7 +96,7 @@ components:
           name: ide-8084
           protocol: http
           targetPort: 8084
-      image: 'agnosticd-devspaces/agd-env:1.0.0'
+      image: 'admin-devspaces/agd-env:1.0.0'
       memoryLimit: 2Gi
       mountSources: true
       sourceMapping: /projects
