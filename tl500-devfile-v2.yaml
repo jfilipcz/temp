@@ -1,6 +1,6 @@
 schemaVersion: 2.1.0
 metadata:
-  name: tl500
+  name: agd
 attributes:
   che-theia.eclipse.org/sidecar-policy: USE_DEV_CONTAINER
   controller.devfile.io/devworkspace-config:
@@ -8,17 +8,17 @@ attributes:
     namespace: agnosticd-devspaces
   controller.devfile.io/storage-type: per-workspace
   metadata-name-field: generateName
-  metadata-name-original-value: tl500-
+  metadata-name-original-value: agnosticd-
 projects:
   - attributes:
       source-origin: branch
-    clonePath: tech-exercise
+    clonePath: agnosticd
     git:
       checkoutFrom:
-        revision: main
+        revision: development
       remotes:
-        origin: 'https://github.com/rht-labs/tech-exercise'
-    name: tech-exercise
+        origin: 'https://github.com/redhat-cop/agnosticd'
+    name: agnosticd
 components:
   - container:
       args:
