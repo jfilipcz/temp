@@ -96,7 +96,8 @@ components:
           name: ide-8084
           protocol: http
           targetPort: 8084
-      image: 'image-registry.openshift-image-registry.svc:5000/admin-devspaces/agd-env:1.0.0'
+      #image: 'image-registry.openshift-image-registry.svc:5000/admin-devspaces/agd-env:1.0.0'
+      image: 'quay.io/agnosticd/ee-multicloud:v0.0.7'
       memoryLimit: 2Gi
       mountSources: true
       sourceMapping: /projects
